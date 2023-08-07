@@ -1,0 +1,53 @@
+{
+  "name": "@grumft/ads",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--experimental-vm-modules rollup --bundleConfigAsCjs -c rollup.config.js",
+    "lint": "eslint --fix . --ignore-path ./.gitignore",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc --ignore-path ./.gitignore"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "^29.5.3",
+    "@types/lodash": "^4.14.196",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "assert": "^2.0.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "firebase-tools": "^12.4.7",
+    "jest": "^29.6.2",
+    "npm-upgrade": "^3.1.0",
+    "prettier": "^3.0.1",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "ts-jest": "^29.1.1",
+    "ts-proto": "^1.156.2",
+    "typescript": "^5.1.6"
+  }
+}
